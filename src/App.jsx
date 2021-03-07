@@ -1,8 +1,8 @@
+import { HomePage } from './pages/HomePage';
 
-function App() {
+export default function App() {
   return (
-    <h1>Hola crack</h1>
+    <HomePage />
   );
 }
 
-export default App;
