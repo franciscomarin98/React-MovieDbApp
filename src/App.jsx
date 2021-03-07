@@ -12,6 +12,10 @@ import { MovieDetailPage } from './pages/MovieDetailPage'
 import { LastReleasesPage } from './pages/LastReleasesPage'
 import { PopularMoviesPage } from './pages/PopularMoviesPage'
 
+//Components
+import MenuTopComponent from './components/MenuTop';
+
+
 export default function App() {
 
   const { Header, Content } = Layout;
@@ -19,27 +23,24 @@ export default function App() {
   return (
     <Layout>
       <Router>
-
         <Header>
-          Head
+          <MenuTopComponent />
         </Header>
 
         <Content>
-
           <Switch>
-
             <Route path="/" exact={true}  >
               <HomePage />
             </Route>
-            
+
             <Route path="/last-releases" exact={true}  >
               <LastReleasesPage />
             </Route>
-            
+
             <Route path="/popular-movies" exact={true}  >
               <PopularMoviesPage />
             </Route>
-            
+
             <Route path="/search-movies" exact={true}  >
               <SearchMoviePage />
             </Route>
@@ -51,13 +52,10 @@ export default function App() {
             <Route path="*">
               <Error404Page />
             </Route>
-          
+
           </Switch>
 
-
-
         </Content>
-        
       </Router>
     </Layout>
   );
