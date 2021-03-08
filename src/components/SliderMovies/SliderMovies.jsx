@@ -12,8 +12,7 @@ const SliderMovies = ({ movies }) => {
     }
 
     const { results } = movies.data;
-    console.log(results);
-
+    
     return (
         <Carousel autoplay className="slider-movies animate__animated animate__fadeIn">
             {
