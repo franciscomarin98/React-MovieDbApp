@@ -3,12 +3,15 @@ import { Row, Col } from 'antd'
 import useFetch from '../hooks/useFetch';
 import MovieList from '../components/MovieList';
 import SliderMovies from '../components/SliderMovies';
-import { urlMoviesNowPlaying, urlMoviesPopular } from '../utils/listaPeticionesAPI';
+import { urlMoviesNowPlaying, urlMoviesPopular, urlMoviesTopRated } from '../utils/listaPeticionesAPI';
+import Footer from '../components/Footer';
+
 
 export const HomePage = () => {
 
     const moviesNowPlaying = useFetch(urlMoviesNowPlaying);
     const moviesPopular = useFetch(urlMoviesPopular);
+    const moviesTopRated = useFetch(urlMoviesTopRated);
 
     return (
         <>
@@ -19,9 +22,11 @@ export const HomePage = () => {
                                movies={moviesPopular} />
                 </Col>
                 <Col span={12}>
-                    {/* <MovieList /> */}
+                <MovieList title={'Peliculas populares'}  
+                               movies={moviesTopRated} />
                 </Col>
             </Row>
+            <Footer />
         </>
     )
 }
