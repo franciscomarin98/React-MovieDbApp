@@ -18,11 +18,11 @@ export const HomePage = () => {
             <SliderMovies movies={moviesNowPlaying} />
             <Row>
                 <Col span={12}>
-                    <MovieList title={'Peliculas populares'}  
+                    <MovieList title={'Top Peliculas populares'}  
                                movies={moviesPopular} />
                 </Col>
                 <Col span={12}>
-                <MovieList title={'Peliculas populares'}  
+                <MovieList title={'Top Mejores Películas Puntuadas'}  
                                movies={moviesTopRated} />
                 </Col>
             </Row>
