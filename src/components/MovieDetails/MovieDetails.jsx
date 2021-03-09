@@ -8,9 +8,9 @@ import { PlayCircleOutlined } from '@ant-design/icons';
 
 const MovieDetails = ({ movie }) => {
 
-    const { id, title, release_date, overview } = movie;
+    const { id, title, release_date, overview, genres } = movie;
     const [isVisibleModal, setIsVisibleModal] = useState(false);
-    const videoMovie = useFetch(`${baseUrl}/${id}/videos?api_key=${apiKey}&language=es-ES`);
+    const videoMovie = useFetch(`${baseUrl}/${id}/videos?api_key=${apiKey}&language=en-US`);
 
     const openModal = () => setIsVisibleModal(true);
     const closeModal = () => setIsVisibleModal(false);
@@ -48,6 +48,14 @@ const MovieDetails = ({ movie }) => {
             <div className="movie__info-content">
                 <h3>General</h3>
                 <p>{overview}</p>
+
+                <h3>Generos</h3>
+                <ul>
+                    {genres.map(ge => (
+                        <li keys={ge.id}>{ge.name}</li>
+                    ))}
+                </ul>
+
             </div>
         </Fragment>
     )

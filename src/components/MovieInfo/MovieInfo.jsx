@@ -1,11 +1,11 @@
 
-import { Row, Col, Button } from 'antd';
+import { Row, Col } from 'antd';
 import { baseImgUrl } from '../../utils/movieDb';
 import PosterMovie from '../PosterMovie';
 import MovieDetails from '../MovieDetails';
 
 const MovieInfo = ({ movieInfo }) => {
-    const { data: { backdrop_path, title, poster_path } } = movieInfo;
+    const { data: { backdrop_path, poster_path } } = movieInfo;
     const fondo = `${baseImgUrl}${backdrop_path}`
     return (
         <div className="movie" style={{ backgroundImage: `url('${fondo}')` }}>
