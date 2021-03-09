@@ -8,8 +8,8 @@ import { Layout } from 'antd';
 import { HomePage } from './pages/HomePage'
 import { Error404Page } from './pages/Error404Page'
 import { SearchMoviePage } from './pages/SearchMoviePage'
-import { MovieDetailPage } from './pages/MovieDetailPage'
 import { LastReleasesPage } from './pages/LastReleasesPage'
+import MovieDetailPage from './pages/MovieDetailPage';
 import { PopularMoviesPage } from './pages/PopularMoviesPage'
 
 //Components
@@ -23,7 +23,7 @@ export default function App() {
   return (
     <Layout>
       <Router>
-        <Header>
+        <Header style={{ zIndex: 1 }}>
           <MenuTopComponent />
         </Header>
 
