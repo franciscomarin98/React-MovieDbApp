@@ -9535,7 +9535,7 @@ rc-overflow@^1.0.0:
     rc-resize-observer "^1.0.0"
     rc-util "^5.5.1"
 
-rc-pagination@~3.1.2:
+rc-pagination@^3.1.4, rc-pagination@~3.1.2:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/rc-pagination/-/rc-pagination-3.1.4.tgz#ae92d8c2d3891c95f5ed47b2e0572a6537773889"
   integrity sha512-6nFsNXGfBb6Hh3SNeTHuEaAWiq33PdDA4rdi2Ba2LIri6XUeOCmWLFPUwZyx+NJn+ODGCxsl5BEVcfLbNsxtGg==

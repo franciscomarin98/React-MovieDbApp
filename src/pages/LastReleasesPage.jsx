@@ -4,6 +4,7 @@ import { baseUrl, apiKey } from '../utils/movieDb';
 import Footer from '../components/Footer';
 import Loading from '../components/Loading';
 import MovieCatalog from '../components/MovieCatalog';
+import PaginationMovies from '../components/Pagination/PaginationMovies';
 
 export const LastReleasesPage = () => {
 
@@ -20,6 +21,10 @@ export const LastReleasesPage = () => {
         })();
     }, [page]);
 
+    const onChangePage = (page) => {
+        setPage(page)
+    }
+
     return (
         <Row>
             <Col span="24" style={{ textAlign: 'center', marginTop: 25 }}>
@@ -28,11 +33,17 @@ export const LastReleasesPage = () => {
                 </h1>
             </Col>
             {movieList.results ? (
-             <Row>
+             <>
                 <Col span="24">
                     <MovieCatalog movies = {movieList}/>
+                    
                 </Col>
-             </Row>
+                <Col span="24">
+                    <PaginationMovies currentPage={movieList.page}
+                                      totalItems={movieList.total_results}
+                                      onChangePage={onChangePage}/>
+                </Col>
+             </>
             ) : (
                 <Col span="24">
                     <Loading />

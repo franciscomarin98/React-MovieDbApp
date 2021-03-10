@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
 import 'antd/dist/antd.css' //Estilos de AntDesign
+import 'rc-pagination/assets/index.css' //Estilos de Rc-pagination
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
