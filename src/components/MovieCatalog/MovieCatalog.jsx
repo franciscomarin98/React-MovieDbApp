@@ -1,4 +1,4 @@
-import { Card, Col, Icon } from 'antd';
+import { Card, Col } from 'antd';
 import { Link } from 'react-router-dom';
 
 import { baseImgUrl } from '../../utils/movieDb';
@@ -8,7 +8,7 @@ import './MovieCatalog.scss'
 
 const MovieCatalog = ({ movies: { results } }) => {
   return results.map(movie => (
-    <Col key={movie.id} xs={4} className="movie-catalog">
+    <Col key={movie.id} xs={2} className="movie-catalog">
       <MovieCard movie={movie} />
     </Col>
   ));

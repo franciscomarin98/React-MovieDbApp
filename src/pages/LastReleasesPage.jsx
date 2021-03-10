@@ -14,7 +14,7 @@ export const LastReleasesPage = () => {
     React.useEffect(() => {
         (async () => {
 
-            const response = await fetch(`${baseUrl}/now_playing?api_key=${apiKey}&language=es-ES&page=${page}`);
+            const response = await fetch(`${baseUrl}/upcoming?api_key=${apiKey}&language=es-ES&page=${page}`);
             const movies = await response.json();
             setMovieList(movies);
 
