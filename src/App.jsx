@@ -8,12 +8,13 @@ import { Layout } from 'antd';
 import { HomePage } from './pages/HomePage'
 import { Error404Page } from './pages/Error404Page'
 import { SearchMoviePage } from './pages/SearchMoviePage'
-import { LastReleasesPage } from './pages/LastReleasesPage'
+
 import MovieDetailPage from './pages/MovieDetailPage';
 import { PopularMoviesPage } from './pages/PopularMoviesPage'
 
 //Components
 import MenuTopComponent from './components/MenuTop';
+import { LastReleasesPage } from './pages/LastReleasesPage';
 
 
 export default function App() {

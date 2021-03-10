@@ -1,8 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import { baseUrl, apiKey } from '../utils/movieDb';
-import Footer from '../components/Footer/Footer';
-import Loading from '../components/Loading/Loading';
+import Footer from '../components/Footer';
+import Loading from '../components/Loading';
+import MovieCatalog from '../components/MovieCatalog';
 
 export const LastReleasesPage = () => {
 
@@ -21,20 +22,25 @@ export const LastReleasesPage = () => {
 
     return (
         <Row>
-            <Col span='24' style={{ textAlign: 'center', marginTop: 25 }}>
+            <Col span="24" style={{ textAlign: 'center', marginTop: 25 }}>
                 <h1 style={{ fontSize: 35, fontWeight: 'bold' }}>
                     Últimos lanzamientos
                 </h1>
             </Col>
             {movieList.results ? (
-                <Col span="24"></Col>
+             <Row>
+                <Col span="24">
+                    <MovieCatalog movies = {movieList}/>
+                </Col>
+             </Row>
             ) : (
-                <Loading />
-            )
-            }
+                <Col span="24">
+                    <Loading />
+                </Col>
+            )}
             <Col span="24">
                 <Footer />
             </Col>
         </Row>
-    )
+    );
 }
