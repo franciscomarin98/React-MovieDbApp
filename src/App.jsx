@@ -7,7 +7,7 @@ import { Layout } from 'antd';
 // Pages
 import { HomePage } from './pages/HomePage'
 import { Error404Page } from './pages/Error404Page'
-import { SearchMoviePage } from './pages/SearchMoviePage'
+import  SearchMoviePage  from './pages/SearchMoviePage'
 
 import MovieDetailPage from './pages/MovieDetailPage';
 import { PopularMoviesPage } from './pages/PopularMoviesPage'

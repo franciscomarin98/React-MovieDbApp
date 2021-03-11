@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const SearchMoviePage = () => {
+const SearchMoviePage = () => {
     return (
         <div>
             Hola desde el buscador
         </div>
     )
 }
+
+export default SearchMoviePage;
