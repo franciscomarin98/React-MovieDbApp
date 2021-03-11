@@ -24,7 +24,7 @@ const SearchMoviePage = ({ location, history }) => {
                 setMoviesSearched(data);
             }
         })();
-    }, [location.search]);
+    }, [location.search, searchValue]);
 
     const onChangeSearchValue = e => {
         const urlParams = queryString.parse(location.search);
