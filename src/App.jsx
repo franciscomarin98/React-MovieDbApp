@@ -6,7 +6,7 @@ import { Layout } from 'antd';
 
 // Pages
 import { HomePage } from './pages/HomePage'
-import { Error404Page } from './pages/Error404Page'
+import  Error404Page  from './pages/Error404Page'
 import  SearchMoviePage  from './pages/SearchMoviePage'
 
 import MovieDetailPage from './pages/MovieDetailPage';
