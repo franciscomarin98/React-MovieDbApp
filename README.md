@@ -8,3 +8,10 @@
 
 ### Movie Detail Page Trailer
 ![](https://res.cloudinary.com/cloudfrancisco/image/upload/v1615321836/Apps%20de%20React%20Js/MovieDetailVideo_kxr1lh.png)
+
+### Last Releases Page
+![](https://res.cloudinary.com/cloudfrancisco/image/upload/v1615497825/Apps%20de%20React%20Js/ultimosLazamientos_lluhgz.png)
+
+
+### Popular Movies Page
+![](https://res.cloudinary.com/cloudfrancisco/image/upload/v1615497825/Apps%20de%20React%20Js/populares_mws51g.png)

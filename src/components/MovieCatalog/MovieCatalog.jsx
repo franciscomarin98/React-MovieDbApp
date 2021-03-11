@@ -8,7 +8,7 @@ import './MovieCatalog.scss'
 
 const MovieCatalog = ({ movies: { results } }) => {
   return results.map(movie => (
-    <Col key={movie.id} xs={2} className="catalog">
+    <Col key={movie.id} xs={6} className="catalog">
       <MovieCard movie={movie} />
     </Col>
   ));
